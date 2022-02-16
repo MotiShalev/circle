@@ -8,6 +8,7 @@ jobs:
     resource_class: arm.medium
     steps:
       - run: uname -a
+      - run: cat /proc/cpuinfo
       - run: echo "Hello, Arm!"
 
   build-large:
