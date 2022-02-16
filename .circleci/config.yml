@@ -9,6 +9,7 @@ jobs:
     steps:
       - run: uname -a
       - run: cat /proc/cpuinfo
+      - run: lscpu
       - run: echo "Hello, Arm!"
 
   build-large:
