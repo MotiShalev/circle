@@ -12,6 +12,8 @@ jobs:
       - run: lscpu
       - run: uptime
       - run: echo "Hello, Arm!"
+      - run: sudo dumpe2fs $(mount | grep 'on \/ ' | awk '{print $1}') | grep 'Filesystem created:'
+
 
   build-large:
     machine:
