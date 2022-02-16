@@ -16,6 +16,7 @@ jobs:
     resource_class: arm.large
     steps:
       - run: uname -a
+      - run: cat /proc/cpuinfo
       - run: echo "Hello, Arm!"
 
 workflows:
