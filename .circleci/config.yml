@@ -16,3 +16,4 @@ jobs:
           shell: powershell.exe
           command: |
             docker info
+            Get-Service -Name cexecsvc
